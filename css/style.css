@@ -28,7 +28,7 @@ a{
 	height: 100%;
 	top: 0;
 	left: 0;
-	cursor: url('../img/cursor2.png') 30 30, auto;
+	cursor: url('../img/cursor2.png') 24 24, auto;
 }
 
 .game:hover .game__win{
@@ -51,6 +51,7 @@ a{
 .game__body2,
 .game__body3,
 .game__body4,
+.game__body5,
 .game__items {
 	position: absolute;
 	width: 100%;
@@ -67,6 +68,8 @@ a{
 .game__body3:after,
 .game__body4:before,
 .game__body4:after,
+.game__body5:before,
+.game__body5:after,
 .game__items:before,
 .game__items:after{
 	content: '';
@@ -81,44 +84,98 @@ a{
 	display: inline-block;
 }
 .game__body:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	background-color:yellow;
-	animation: fly_1 26s infinite;
+	animation: fly_1 24s infinite;
 }
 .game__body:after{
-	background-color: blue;
-	animation: fly_2 13s infinite;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+background-color: blue;
+	animation: fly_2 11s infinite;
 }
 .game__body2:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	background-color: #fcf;
-	animation: fly_5 18s infinite;
+	animation: fly_5 16s infinite;
 }
 .game__body2:after{
-	background-color: white;
-	animation: fly_5 26s infinite;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+	animation: fly_5 24s infinite;
 }
 .game__body3:before{
-	background-color: #bbbb;
-	animation: fly_4 13s infinite;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
+	animation: fly_4 11s infinite;
 }
 .game__body3:after{
 	background-color: #effb;
-	animation: fly_5 18s infinite;
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
+	animation: fly_5 16s infinite;
 }
 .game__body4:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	background-color: #bfbb;
-	animation: fly_1 13s infinite;
+	animation: fly_1 11s infinite;
 }
 .game__body4:after{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
 	background-color: #aafb;
-	animation: fly_3 26s infinite;
+	animation: fly_3 24s infinite;
+}
+.game__body5:before{
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
+	background-color: #cc18c1;
+	animation: fly_7 18s infinite;
+}
+.game__body5:after{
+	background-color: #076400;
+	background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 100% 25%;
+	animation: fly_7 13s infinite;
 }
 .game__items:before{
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	background-color: green;
-	animation: fly_3 19s infinite;
+	animation: fly_3 17s infinite;
 }
 .game__items:after{
+		background-image: url(../img/1356462528_1357539925.jpg);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	background-position: 0% 25%;
 	background-color: red;
-	animation: fly_6 26s infinite;
+	animation: fly_6 24s infinite;
 }
 @keyframes fly_1{
 	10% {transform: translate(64vw, 0vh);}
@@ -144,15 +201,15 @@ a{
 	40% {transform: translate(95.667vw, 0vh);}
 	50% {transform: translate(0vw, 20vh);}
 	60% {transform: translate(65vw, 0vh);}
-	70% {transform: translate(0vw, 30vh);}
+	70% {transform: translate(95vw, 30vh);}
 	80% {transform: translate(95.667vw, 75vh);}
-	90% {transform: translate(50vw, 0vh);}
+	90% {transform: translate(50vw, 50vh);}
 	0%, 100% {transform: translate(0px, 0px);}
 }
 @keyframes fly_4{
-	25% {transform: translate(95.667vw, 0vh);}
-	50% {transform: translate(0vw, 95.667vh);}
-	75% {transform: translate(95.667vw, 95.667vh);}
+	25% {transform: translate(90.667vw, 0vh);}
+	50% {transform: translate(0vw, 90.667vh);}
+	75% {transform: translate(90.667vw, 90.667vh);}
 	0%, 100% {transform: translate(0px, 0px);}
 }
 @keyframes fly_5{
@@ -178,6 +235,18 @@ a{
 	80% {transform: translate(11vw, 26vh);}
 	90% {transform: translate(50vw, 50vh);}
 	0%, 100% {transform: translate(0px, 0px);}
+}
+@keyframes fly_7{
+	10% {transform: translate(60vw, 60vh);}
+	20% {transform: translate(90vw, 90vh);}
+	30% {transform: translate(20vw, 20vh);}
+	40% {transform: translate(30vw, 40vh);}
+	50% {transform: translate(80vw, 70vh);}
+	60% {transform: translate(15vw,30vh);}
+	70% {transform: translate(50vw, 85vh);}
+	80% {transform: translate(46vw, 60vh);}
+	90% {transform: translate(52vw, 40vh);}
+	0%, 100% {transform: translate(45px, 45px);}
 }
 
 
@@ -224,6 +293,8 @@ a{
 .game__body3:hover:after,
 .game__body4:hover:before,
 .game__body4:hover:after,
+.game__body5:hover:before,
+.game__body5:hover:after,
 .game__body:hover .game__items:before,
 .game__body:hover .game__items:after{
 	display: none;
@@ -338,4 +409,59 @@ a{
 }
 .info__text p:last-child{
 	margin: 0;
+}
+
+-----
+.menu {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	visibility: hiden;
+}
+.menu__icon {
+
+	display: inline-block;
+	width: 100px;
+	height: 25px;
+	border-radius: 75%;
+	border: 1px solid #fff;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	position: relative;
+	z-index: 41;
+
+
+}
+.menu__body {
+
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	background-color: #333;
+
+	font-size: 40px;
+}
+.menu__body:target{
+	display: block;
+}
+.conteiner {
+		width: 100%;
+	height: 100%;
+}
+.menu__close {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+height:100%;
+	font-size: 40px;
+	color: #fff;
 }
