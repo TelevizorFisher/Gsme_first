@@ -29,5 +29,6 @@ window.onload = function () {
     e.style.backgroundColor = x;
     a.style.backgroundColor = x;
 }
+
 }
      
